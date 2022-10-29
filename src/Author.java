@@ -1,6 +1,6 @@
 public class Author {
-    String nameWriter;
-    String surnameWriter;
+    private String nameWriter;
+    private String surnameWriter;
 
 
     public  Author (String nameWriter, String surnameWriter) {
@@ -8,6 +8,12 @@ public class Author {
         this.surnameWriter = surnameWriter;
 
     }
+
+    public String toString() {
+        return "Автор - " + nameWriter + " " + surnameWriter;
+    }
+
+
 
     public String getnameWriter() {
         return this.nameWriter;

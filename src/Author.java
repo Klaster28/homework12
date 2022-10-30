@@ -1,28 +1,28 @@
 import java.util.Objects;
 
 public class Author {
-    private String nameWriter;
-    private String surnameWriter;
+    private String nameAuthor;
+    private String surnameAuthor;
 
 
-    public  Author (String nameWriter, String surnameWriter) {
-        this.nameWriter = nameWriter;
-        this.surnameWriter = surnameWriter;
+    public  Author (String nameAuthor, String surnameAuthor) {
+        this.nameAuthor = nameAuthor;
+        this.surnameAuthor = surnameAuthor;
 
     }
 
     public String toString() {
-        return "Автор - " + nameWriter + " " + surnameWriter;
+        return "Автор - " + nameAuthor + " " + surnameAuthor;
     }
 
 
 
-    public String getnameWriter() {
-        return this.nameWriter;
+    public String getnameAuthor() {
+        return this.nameAuthor;
     }
 
-    public String getsurnameWriter() {
-        return this.surnameWriter;
+    public String getsurnameAuthor() {
+        return this.surnameAuthor;
     }
 
     @Override
@@ -30,12 +30,12 @@ public class Author {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Author author = (Author) o;
-        return nameWriter.equals(author.nameWriter) && surnameWriter.equals(author.surnameWriter);
+        return nameAuthor.equals(author.nameAuthor) && surnameAuthor.equals(author.surnameAuthor);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(nameWriter, surnameWriter);
+        return Objects.hash(nameAuthor, surnameAuthor);
     }
 
 }

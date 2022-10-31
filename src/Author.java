@@ -11,18 +11,16 @@ public class Author {
 
     }
 
-    public String toString() {
-        return "Автор - " + nameAuthor + " " + surnameAuthor;
-    }
-
-
-
     public String getnameAuthor() {
         return this.nameAuthor;
     }
 
     public String getsurnameAuthor() {
         return this.surnameAuthor;
+    }
+
+    public String toString() {
+        return "Автор - " + nameAuthor + " " + surnameAuthor;
     }
 
     @Override

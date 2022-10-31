@@ -11,11 +11,6 @@ public class Book {
         this.yearBook = yearBook;
     }
 
-
-    public String toString() {
-        return  "Название книги - " + nameBook + ", " + author + ", год публикации" + yearBook ;
-    }
-
     public String getNameBook() {
         return this.nameBook;
     }
@@ -31,7 +26,13 @@ public class Book {
         this.yearBook = year;
     }
 
+   // public String toString() {
+   //     return  "Название книги - " + nameBook + ", " + author + ", год публикации" + yearBook ;
+   // }
 
+    public String toString() {
+        return nameBook + ", " + author + ", " + yearBook;
+    }
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

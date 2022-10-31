@@ -30,8 +30,12 @@ public class Book {
    //     return  "Название книги - " + nameBook + ", " + author + ", год публикации" + yearBook ;
    // }
 
+    //public String toString() {
+     //   return nameBook + ", " + author + ", " + yearBook;
+   // }
+
     public String toString() {
-        return nameBook + ", " + author + ", " + yearBook;
+        return nameBook + ", " + author.toString()+ ", " + yearBook;
     }
     @Override
     public boolean equals(Object o) {
